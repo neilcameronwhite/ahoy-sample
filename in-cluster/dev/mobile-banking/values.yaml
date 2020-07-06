@@ -1,0 +1,25 @@
+applications:
+  scheduler:
+    configPath: /opt/config
+    configs:
+      application-config-1:
+        config: greeting=hello neil
+        name: application.properties
+    dockerConfigJson: null
+    environmentVariables:
+      neil: cool
+    healthEndpointPath: /
+    healthEndpointPort: 8080
+    healthEndpointScheme: HTTP
+    image: clivebor/spring-helloworld:1.0.0
+    name: scheduler
+    replicas: 2
+    routeHostname: mobile-banking-scheduler-dev.ahoy.ocp.host
+    routeTargetPort: 8080
+    servicePorts:
+    - 8080
+    version: 1.0.0
+environment: dev
+host: ahoy.ocp.host
+releaseName: mobile-banking
+releaseVersion: '1.0'
