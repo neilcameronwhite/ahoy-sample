@@ -19,6 +19,8 @@ applications:
     servicePorts:
     - 8080
     version: 1.0.0
+    volumes: {
+      }
 environment: dev
 host: ahoy.ocp.host
 releaseName: mobile-banking
