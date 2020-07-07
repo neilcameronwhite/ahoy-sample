@@ -39,7 +39,29 @@ applications:
     version: 1.0.1
     volumes: {
       }
+  scheduler:
+    configPath: /opt/config
+    configs:
+      application-config-1:
+        config: greeting=hello neil
+        name: application.properties
+    dockerConfigJson: null
+    environmentVariables:
+      neil: cool
+    healthEndpointPath: /
+    healthEndpointPort: 8080
+    healthEndpointScheme: HTTP
+    image: clivebor/spring-helloworld:1.0.0
+    name: scheduler
+    replicas: 1
+    routeHostname: null
+    routeTargetPort: null
+    servicePorts:
+    - 8080
+    version: 1.0.0
+    volumes: {
+      }
 environment: dev
 host: ahoy.ocp.host
 releaseName: active-rewards
-releaseVersion: '1.09'
+releaseVersion: '1.10'
