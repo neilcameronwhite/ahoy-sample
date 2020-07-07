@@ -1,0 +1,45 @@
+applications:
+  heartbeat:
+    configPath: null
+    configs: {
+      }
+    dockerConfigJson: null
+    environmentVariables: {
+      }
+    healthEndpointPath: null
+    healthEndpointPort: null
+    healthEndpointScheme: null
+    image: "clivebor/spring-helloworld:1.0.0\t"
+    name: heartbeat
+    replicas: 1
+    routeHostname: null
+    routeTargetPort: null
+    servicePorts: [
+      ]
+    version: 1.0.0
+    volumes: {
+      }
+  invocing:
+    configPath: null
+    configs: {
+      }
+    dockerConfigJson: null
+    environmentVariables: {
+      }
+    healthEndpointPath: null
+    healthEndpointPort: null
+    healthEndpointScheme: null
+    image: "clivebor/spring-helloworld:1.0.0\t"
+    name: invocing
+    replicas: 1
+    routeHostname: null
+    routeTargetPort: null
+    servicePorts: [
+      ]
+    version: 1.0.1
+    volumes: {
+      }
+environment: dev
+host: ahoy.ocp.host
+releaseName: active-rewards
+releaseVersion: '1.09'

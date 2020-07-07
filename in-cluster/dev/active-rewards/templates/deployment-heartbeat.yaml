@@ -1,0 +1,2 @@
+{{- $vals := dict "glob" .Values "app" .Values.applications.heartbeat -}}
+{{- include "deployment.app" $vals }}
